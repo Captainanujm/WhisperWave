@@ -29,6 +29,47 @@ function Chat(){
         <img src="../../../public/info.png"/>
     </div>
         </div>
+        <div className="center">
+            <div className="other-message">
+                <img src="../../../public/avatar.png"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ipsa accusantium hic optio atque. Cupiditate, provident. Nihil nam alias
+                      quibusdam hic dignissimos illo laboriosam facilis.
+                </p>
+            </div>
+            <div className="own-message">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolor nam similique blanditiis quam sunt dolores ratione,
+                 libero veniam explicabo itaque optio, tempora quia omnis?
+            </p>
+            </div>
+            <div className="other-message">
+                <img src="../../../public/avatar.png"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ipsa accusantium hic optio atque. Cupiditate, provident. Nihil nam alias
+                      quibusdam hic dignissimos illo laboriosam facilis.
+                </p>
+            </div>
+            <div className="own-message">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolor nam similique blanditiis quam sunt dolores ratione,
+                 libero veniam explicabo itaque optio, tempora quia omnis?
+            </p>
+            </div>
+            <div className="other-message">
+                <img src="../../../public/avatar.png"/>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ipsa accusantium hic optio atque. Cupiditate, provident. Nihil nam alias
+                      quibusdam hic dignissimos illo laboriosam facilis.
+                </p>
+            </div>
+            <div className="own-message">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolor nam similique blanditiis quam sunt dolores ratione,
+                 libero veniam explicabo itaque optio, tempora quia omnis?
+            </p>
+            </div>
+        </div>
        {openEmoji==true?<div className="emoji"><EmojiPicker onEmojiClick={onEmclick}/></div>:null} 
         <div className="bottom">
             <div className="bottom-compo">
