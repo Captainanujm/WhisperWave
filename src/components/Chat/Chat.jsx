@@ -1,10 +1,14 @@
-import {react,useState} from "react";
+import {react,useEffect,useRef,useState} from "react";
 import EmojiPicker from "emoji-picker-react";
 import "./Chat.css";
 
 function Chat(){
     const [openEmoji,setOpenEmoji]=useState(false);
     const [inputText,setinputText]=useState('');
+    const endReference=useRef((null));
+    useEffect(()=>{
+        endReference.current?.scrollIntoView({behaviour:"smooth"});
+    });
     function onEmclick(emojiObject){
         setinputText(prevInput=>{
             setOpenEmoji(false);
@@ -69,6 +73,7 @@ function Chat(){
                  libero veniam explicabo itaque optio, tempora quia omnis?
             </p>
             </div>
+            <div ref={endReference}></div>
         </div>
        {openEmoji==true?<div className="emoji"><EmojiPicker onEmojiClick={onEmclick}/></div>:null} 
         <div className="bottom">
