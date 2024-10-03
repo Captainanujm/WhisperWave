@@ -79,6 +79,9 @@
     
 }
 .center{
+    span{
+        font-size: 12px;
+    }
     padding-bottom:30px;
     padding-top: 5px;
     padding-right:20px;
@@ -105,11 +108,22 @@
         }
     }
     .own-message{
-        border-radius: 20px;
+        padding:25px 15px 25px 10px;
+        p{
+            border-radius: 20px;
+            padding:20px;
+            background-color: #dddddd35;
+        }
+        display: flex;
+        gap:10px;
+        /* justify-self: flex-start; */
+        width:500px;
+        align-self: flex-end;
+        /* border-radius: 20px;
        padding:20px;
         display: flex;
         align-self: flex-end;
         width:500px;
-        background-color: #dddddd35;
+        background-color: #dddddd35; */
     }
 }

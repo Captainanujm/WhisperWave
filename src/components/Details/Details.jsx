@@ -62,6 +62,9 @@ function Details(){
         <div className="block">
             <button className="block-button">Block User</button>
         </div>
+        <div className="logout">
+            <button className="logout-button">Logout</button>
+        </div>
         </div>
        
     </div>)

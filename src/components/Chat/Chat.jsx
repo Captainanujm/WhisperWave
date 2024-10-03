@@ -5,9 +5,11 @@ import "./Chat.css";
 function Chat(){
     const [openEmoji,setOpenEmoji]=useState(false);
     const [inputText,setinputText]=useState('');
+    const [adding,setadding]=useState(false);
     const endReference=useRef((null));
     useEffect(()=>{
-        endReference.current?.scrollIntoView({behaviour:"smooth"});
+        endReference.current?.scrollIntoView({behavior:"smooth"});
+        // endReference.current? This is called Optional chaining.
     });
     function onEmclick(emojiObject){
         setinputText(prevInput=>{
@@ -36,42 +38,61 @@ function Chat(){
         <div className="center">
             <div className="other-message">
                 <img src="../../../public/avatar.png"/>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ipsa accusantium hic optio atque. Cupiditate, provident. Nihil nam alias
+                      quibusdam hic dignissimos illo laboriosam facilis.
+                </p>
+                <span>1 min ago</span>
+                </div>
+                
+            </div>
+            <div className="own-message">
+            <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                      Ipsa accusantium hic optio atque. Cupiditate, provident. Nihil nam alias
                       quibusdam hic dignissimos illo laboriosam facilis.
                 </p>
-            </div>
-            <div className="own-message">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Dolor nam similique blanditiis quam sunt dolores ratione,
-                 libero veniam explicabo itaque optio, tempora quia omnis?
-            </p>
+                <span>1 min ago</span>
+                </div>
             </div>
             <div className="other-message">
                 <img src="../../../public/avatar.png"/>
+                <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                      Ipsa accusantium hic optio atque. Cupiditate, provident. Nihil nam alias
                       quibusdam hic dignissimos illo laboriosam facilis.
                 </p>
+                <span>1 min ago</span>
+                </div>
             </div>
             <div className="own-message">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Dolor nam similique blanditiis quam sunt dolores ratione,
-                 libero veniam explicabo itaque optio, tempora quia omnis?
-            </p>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ipsa accusantium hic optio atque. Cupiditate, provident. Nihil nam alias
+                      quibusdam hic dignissimos illo laboriosam facilis.
+                </p>
+                <span>1 min ago</span>
+                </div>
             </div>
             <div className="other-message">
                 <img src="../../../public/avatar.png"/>
+                <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                      Ipsa accusantium hic optio atque. Cupiditate, provident. Nihil nam alias
                       quibusdam hic dignissimos illo laboriosam facilis.
                 </p>
+                <span>1 min ago</span>
+                </div>
             </div>
             <div className="own-message">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Dolor nam similique blanditiis quam sunt dolores ratione,
-                 libero veniam explicabo itaque optio, tempora quia omnis?
-            </p>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ipsa accusantium hic optio atque. Cupiditate, provident. Nihil nam alias
+                      quibusdam hic dignissimos illo laboriosam facilis.
+                </p>
+                <span>1 min ago</span>
+                </div>
             </div>
             <div ref={endReference}></div>
         </div>

@@ -1,0 +1,51 @@
+.add{
+    padding:20px;
+    background-color:rgba(17,25,40,0.5);
+    backdrop-filter: blur(18px) saturate(180%);
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    .firstdiv{
+        display:flex;
+        gap:20px;
+        input{
+        padding:5px;
+        height:50px;
+        width:200px;
+        background-color: white;
+        border-radius: 10px;
+    }
+        button{
+            height:50px;
+            width:100px;
+            border-radius: 10px;
+            border:none;
+            cursor: pointer;
+        }
+}
+.seconddiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .profile{
+         display:flex;
+        align-items: center;
+       gap:5px;
+       img{
+        height:40px;
+        width:40px;
+        border-radius: 10px;
+}
+    }
+    button{
+        height:50px;
+        width:100px;
+        text-align: center;
+        background-color: cornflowerblue;
+        border-radius: 10px;
+        border:none;
+        cursor: pointer;
+    }
+}
+}
